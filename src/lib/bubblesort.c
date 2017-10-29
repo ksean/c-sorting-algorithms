@@ -3,6 +3,9 @@
 
 void bubblesort(int *input, int size) 
 {
+	if ( size == 0 || size == 1 ) {
+		return;
+	}
 	int i;
 	int whileLoopCount = 0;
 	bool swapPerformed = true;
