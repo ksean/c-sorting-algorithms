@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "bubblesort.h"
+#include "quicksort.h"
 
 void printArrayContents(int *array, int size) 
 {
@@ -18,7 +19,7 @@ int main()
     printf("Before\n");
     printArrayContents(array, size);
 
-    bubblesort(array, size);
+    quicksort(array, size);
 
     printf("After\n");
     printArrayContents(array, size);
